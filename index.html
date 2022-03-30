@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap" rel="stylesheet"> 
+
+
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Drake Video Gallery</title>
+</head>
+<body>
+    <header class="clearfix">
+        <img id="logoimage" src="images/drakelogo.webp">
+        <h2>Drake Video Gallery</h2>
+    </header>
+        <nav id="nav_list">
+            <ul>
+                <li><a href="#vid1">Drake Interview</a></li>
+                <li><a href="#vid2">Sicko Mode</a></li>
+                <li><a href="#vid3">Scorpion Concert</a></li>
+                <li><a href="#vid4">God's Plan </a></li>
+                <li><a href="#vid5">Laugh Now Cry Later </a></li>
+            </ul>
+        </nav>
+    <main>
+        <section>
+            <article id="vid1">
+                <h4>Drake Interview</h4>
+                <div class="videowrapper">
+                    <iframe src="https://www.youtube.com/embed/mmsasEoupO4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article>
+
+            <article id="vid2">
+                <h4>Sicko Mode - Live Performance</h4>
+                <div class="videowrapper">
+                <iframe src="https://www.youtube.com/embed/ngFLwCY_lM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </article>
+
+            <article id="vid3">
+                <h4>Scorpion Concert - Los Angeles</h4>
+                <div class="videowrapper">
+                    <iframe src="https://www.youtube.com/embed/CgQwNEzpHeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>       
+            </article>
+
+            <article id="vid4">
+                <h4>God's Plan - Music Video</h4>
+                <div class="videowrapper">
+                    <iframe src="https://www.youtube.com/embed/xpVfcZ0ZcFM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </article>
+
+            <article id="vid5">
+                <h4>Laugh Now Cry Later - Music Video</h4>
+                <div class="videowrapper">
+                <iframe src="https://www.youtube.com/embed/JFm7YDVlqnI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </article>
+        </section>
+
+        <div><button onclick="topFunction()" id="cornerbtn" title="Go to top">Return To Top</button></div>
+
+        <script>
+             window.onscroll = function() {scrollFunction()};
+         
+             function scrollFunction() {
+               if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+                 document.getElementById("cornerbtn").style.display = "block";
+               } else {
+                 document.getElementById("cornerbtn").style.display = "none";
+               }
+             }
+             function topFunction() {
+               document.body.scrollTop = 0;
+               document.documentElement.scrollTop = 0;
+             }
+         </script>
+
+    </main>
+    <footer>
+        <p>&copy; 2022 Aiden Trundy Productions</p>
+    </footer>
+</body>
+</html>
